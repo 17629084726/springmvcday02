@@ -29,7 +29,7 @@
     </select>
 
     <select id="login" parameterType="user" resultMap="usermap">
-        select * from user where name=#{user_name} and password=#{user_password}
+        select * from user where name =#{user_name} and password =#{user_password}
     </select>
     <select id="getUserList" parameterType="hashmap" resultMap="usermap">
         select * from user limit #{pagestart}, #{pagesize}

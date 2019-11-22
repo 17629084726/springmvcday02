@@ -16,7 +16,6 @@
             <input type="text" name="user_name" required lay-verify="name" autocomplete="off"
                    placeholder="请输入标题" class="layui-input" style="width: 150px" value="admin">
 
-
         </div>
     </div>
     <div class="layui-form-item">
@@ -66,7 +65,7 @@
                 {
                     url: "loginLayui.action",
                     data: JSON.stringify(data.field),
-                    dataType: "json",
+                    dataType: "text",
                     type: "post",
                     contentType: "application/json",
                     success: function (d) {
@@ -81,8 +80,6 @@
             return false;
         });
     })
-
-
 </script>
 </body>
 </html>
