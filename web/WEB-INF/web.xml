@@ -5,7 +5,7 @@
          version="4.0">
 
     <welcome-file-list>
-        <welcome-file>/page/layuipage/login.html</welcome-file>
+        <welcome-file>/page/layuipage/Layui.html</welcome-file>
     </welcome-file-list>
 
 
