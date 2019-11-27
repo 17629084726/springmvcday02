@@ -15,12 +15,25 @@
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
 <script type="text/html" id="toolbarDemo">
+    <div class="demoTable" style="margin-top: 20px">
+        &nbsp; 姓名：
+        <div class="layui-inline">
+            <input class="layui-input" name="id" id="searchName" autocomplete="off">
+        </div>
+        专业：
+        <div class="layui-inline">
+            <input class="layui-input" name="id" id="searchMajor" autocomplete="off">
+        </div>
+        <button class="layui-btn" id="searchBtn" data-type="reload">搜索</button>
+    </div>
+
     <div class="layui-btn-container">
         <button class="layui-btn layui-btn-sm" id="btn-add" lay-event="add">添加</button>
         <button class="layui-btn layui-btn-sm delAll_btn" lay-event="delete">批量删除</button>
         <button class="layui-btn layui-btn-sm" lay-event="update">编辑</button>
     </div>
 </script>
+
 
 <script>
     layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function () {
